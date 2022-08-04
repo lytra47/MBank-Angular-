@@ -1,0 +1,88 @@
+<!-- NAVBAR -->
+<div class="navcontainer">
+  <div class="navbar1">
+    <h4 id="logoH">MBANK</h4>
+    <ul>
+      <li>
+        <button id="navH" class="" href="">Home</button>
+      </li>
+      <li>
+        <button id="navP" class="" href="">Profile</button>
+      </li>
+      <li>
+        <button id="navB" class="" href="">Banking</button>
+      </li>
+      <li>
+        <button id="navC" class="" href="">Cards</button>
+      </li>
+      <li>
+        <button id="navL" class="" onclick="logout()">Logout</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- NAVBAR end -->
+<!-- User -->
+<div class="usercontainer">
+  <h3 id="welc">{{ welc }}</h3>
+</div>
+<div class="propic">
+  <img src="/assets/user.png" class="img-thumbnail rounded-4" alt="user logo" />
+</div>
+<!-- User end -->
+
+<!-- CARD 1 -->
+<div class="sect1">
+  <div class="head"><p>Balance</p></div>
+  <div class="body"><p id="balAMT">AMOUNT</p></div>
+</div>
+<!-- CARD 2 -->
+<div class="sect2">
+  <div class="cont item1">
+    <button
+      class="btn btn-warning fs-3"
+      onclick="paymentsO()"
+      style="width: 100%"
+    >
+      Transfer
+    </button>
+  </div>
+  <div class="cont item2">
+    <button class="btn btn-warning fs-3" style="width: 100%">Deposit</button>
+  </div>
+  <div class="cont item3">
+    <button class="btn btn-warning fs-3" style="width: 100%">Accounts</button>
+  </div>
+  <div class="cont item4">
+    <button class="btn btn-warning fs-3" style="width: 100%">Insurance</button>
+  </div>
+  <div class="cont item5">
+    <button class="btn btn-warning fs-3" style="width: 100%">Shopping</button>
+  </div>
+  <div class="cont item6">
+    <button class="btn btn-warning fs-3" style="width: 100%">Offers</button>
+  </div>
+</div>
+<!--  -->
+<!-- MODALS -->
+<!-- Payments -->
+<div class="modal1 payments hidden">
+  <button class="close-modal" onclick="closeModal()">&times;</button>
+  <h1 class="mb-4">Payments</h1>
+  <div>
+    <form action="">
+      <div class="label">
+        <kbd class="rounded-2 p-2 bg-info ps-3 pe-5" for="">To </kbd>
+      </div>
+      <li><input class="mt-3" type="text" placeholder="A/C Number" /></li>
+      <div class="label">
+        <kbd class="rounded-2 p-2 ps-3 pe-3 bg-info" for="">Amount</kbd>
+      </div>
+      <li><input class="mt-3" type="Number" placeholder="Amount" /></li>
+    </form>
+  </div>
+</div>
+<!--  -->
+<div class="overlay hidden"></div>
+
+<!--  -->

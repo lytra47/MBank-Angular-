@@ -1,0 +1,76 @@
+<div id="logo" class="container-fluid pt-2 pb-1 fs-3 bg-warning">MBANK</div>
+<div class="tagline text-white">
+  <h1>MBANK</h1>
+  <h3>Secure and smart banking.</h3>
+</div>
+<div class="login text-center border">
+  <h1 class="">Login to Internet Banking</h1>
+
+  <li>
+    <input
+      [(ngModel)]="acno"
+      type="text"
+      placeholder="Account number"
+      id="usrID"
+    />
+  </li>
+  <li>
+    <input
+      [(ngModel)]="pass"
+      type="password"
+      placeholder="Password"
+      id="usrPSWD"
+    />
+  </li>
+  <li>
+    <button class="btn btn-success" id="login" (click)="login()">Login</button>
+  </li>
+  <li>
+    <button class="btn btn-primary mt-3" (click)="openModal()">
+      New user? Register here.
+    </button>
+  </li>
+</div>
+
+<!-- MODAL -->
+<div #modal1 class="modal1 hidden">
+  <button class="close-modal" (click)="closeModal()">&times;</button>
+  <h1 class="text-center">Register</h1>
+  <h3>Add Account Details</h3>
+  <form action="" class="m-1" style="display: flex; flex-direction: column">
+    <input
+      [(ngModel)]="regacno"
+      name="REGACNO;"
+      class="form-control"
+      id="acno"
+      type="text"
+      placeholder="Account Number"
+    />
+    <input
+      [(ngModel)]="reguname"
+      name="REGNAME;"
+      class="form-control"
+      id="uname"
+      type="text"
+      placeholder="Username"
+    />
+    <input
+      [(ngModel)]="regpass"
+      name="REGPASS;"
+      class="form-control"
+      id="pword"
+      type="password"
+      placeholder="Password"
+    />
+
+    <button
+      type="button"
+      class="btn btn-success mt-2"
+      (click)="register()"
+      id="btn1"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+<div (click)="closeModal()" class="overlay hidden"></div>

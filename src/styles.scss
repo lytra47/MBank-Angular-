@@ -1,0 +1,372 @@
+/* You can add global styles to this file, and also import other style files */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+input {
+  border-radius: 6px;
+  border: 1px solid grey;
+  height: 40px;
+  font-size: 14pt;
+  padding: 6px;
+}
+body {
+  // background: url("./Rect\ Light.svg");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='900' preserveAspectRatio='none' viewBox='0 0 1440 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='900' x='0' y='0' fill='rgba(48%2c 48%2c 52%2c 1)'%3e%3c/rect%3e%3cpath d='M66 900L966 0L1675.5 0L775.5 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M509.20000000000005 900L1409.2 0L1622.2 0L722.2 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M1425 900L525 0L52.5 0L952.5 900z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3cpath d='M895.8 900L-4.2000000000000455 0L-469.20000000000005 0L430.79999999999995 900z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3cpath d='M926.5872142658901 900L1440 386.5872142658901L1440 900z' fill='url(%23SvgjsLinearGradient1007)'%3e%3c/path%3e%3cpath d='M0 900L513.4127857341099 900L 0 386.5872142658901z' fill='url(%23SvgjsLinearGradient1008)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1007'%3e%3cstop stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1008'%3e%3cstop stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 155%2c 6%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+#logoH {
+  display: none;
+}
+.navcontainer {
+  padding-top: 3px;
+  display: flex;
+  justify-content: center;
+  .navbar1 {
+    border-radius: 3em;
+    padding-inline: 0em;
+    padding-top: 0.6em;
+    button {
+      // background-color: rgb(32, 34, 44);
+      background-color: #fec107;
+      border: 1px solid black;
+      color: black;
+    }
+    button:hover {
+      background-color: #ffd75f;
+    }
+    #navH {
+      border-radius: 8px 0px 0px 8px;
+    }
+    #navL {
+      border-radius: 0px 8px 8px 0px;
+    }
+    ul {
+      display: flex;
+      padding-right: 2.2em;
+    }
+  }
+}
+
+// login page
+.login {
+  background-color: rgb(246, 246, 246);
+  margin-top: 2em;
+  margin-inline: 1em;
+  padding: 2em;
+  border-radius: 8px;
+
+  h1 {
+    margin-bottom: 2em;
+  }
+  input {
+    margin-bottom: 1em;
+    width: 82%;
+  }
+  button {
+    width: 82%;
+  }
+}
+#logo {
+  text-align: center;
+  padding-left: 0em;
+}
+.payments {
+  input {
+    width: 80%;
+  }
+}
+
+.close-modal {
+  height: auto;
+  position: absolute;
+  margin-top: -70px;
+  right: 0.5rem;
+  font-size: 4rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 96%;
+  background-color: white;
+  padding: 3em;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 15;
+  h3 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  input {
+    margin-bottom: 1em;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+.tagline {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+.usercontainer {
+  color: white;
+  margin-left: 1.6em;
+  margin-top: 2.6em;
+  float: left;
+}
+
+.propic {
+  width: 6em;
+  margin-top: 2em;
+  float: right;
+  margin-right: 1em;
+}
+
+.sect1 {
+  margin-top: 16em;
+  margin-inline: 1em;
+}
+
+.sect2 {
+  display: grid;
+  gap: 10px;
+  margin-top: 2em;
+  margin-inline: 1em;
+}
+.item1 {
+  grid-row-start: 1;
+}
+.item2 {
+  grid-row-start: 1;
+}
+.item3 {
+  grid-row-start: 1;
+}
+
+.head {
+  background-color: rgb(214, 214, 0);
+  border-radius: 8px 8px 0 0;
+  text-align: right;
+  p {
+    margin-bottom: 0em !important;
+    font-size: 20px;
+    padding: 0.4em 0.8em 0.4em 0.4em;
+  }
+}
+.body {
+  text-align: center;
+  background-color: rgb(141, 141, 141);
+  color: white;
+  border-radius: 0 0px 8px 8px;
+
+  p {
+    padding: 0.4em;
+    padding-block: 2em;
+    font-size: 22px;
+  }
+}
+
+/////////////
+
+@media only screen and (min-width: 800px) {
+  #welc {
+    margin-left: 2em;
+  }
+  kbd {
+    text-align: center;
+    font-size: 20px !important;
+  }
+
+  .navbar1 {
+    button {
+      padding: 0.6em 1em;
+    }
+  }
+
+  .payments {
+    text-align: center;
+    input {
+      margin-left: 0em;
+      width: 60%;
+    }
+  }
+  .login {
+    margin-inline: 10em;
+    margin-top: 10em;
+  }
+  .modal1 {
+    margin-top: 5em;
+    width: 80%;
+    h1 {
+      padding-bottom: 1em;
+    }
+  }
+  .sect1 {
+    margin-inline: 2em;
+  }
+  .propic {
+    margin-right: 2em;
+  }
+  .sect2 {
+    margin-inline: 2em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #logo {
+    text-align: left;
+  }
+  #balAMT {
+    padding-block: 6px;
+  }
+  .login {
+    margin-inline: 12em;
+    margin-top: 10em;
+  }
+  .modal1 {
+    margin-top: 5em;
+    width: 80%;
+    h1 {
+      padding-bottom: 1em;
+    }
+  }
+  .payments {
+    width: 60% !important;
+  }
+
+  #welc {
+    margin-left: 2.5em;
+  }
+  .sect1 {
+    margin-top: 13em;
+    width: 29.4%;
+    margin-left: 2.5em;
+  }
+  .propic {
+    margin-right: 2.5em;
+  }
+  .sect2 {
+    margin-inline: 2.5em;
+
+    gap: 25px;
+  }
+  button {
+    height: 3.5em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #logo {
+    padding-left: 2.8em;
+  }
+  #logoH {
+    display: block;
+    padding: 0.6em 0 0 0;
+    margin-left: 3em;
+    position: absolute;
+  }
+  .navbar1 {
+    background-color: #fec107;
+    border-radius: 0 !important;
+
+    width: 100%;
+
+    button {
+      border-radius: 8px !important;
+      border: 0 !important;
+    }
+    ul {
+      margin-right: 1em;
+      float: right;
+    }
+  }
+  .login {
+    margin-left: 35em;
+    margin-right: 5em;
+    margin-top: 10em;
+    float: right;
+    padding-inline: 4em;
+    h1 {
+      font-size: 30px;
+    }
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .modal1 {
+    margin-top: 7em;
+    width: 88%;
+    h1 {
+      padding-bottom: 1em;
+    }
+  }
+  .tagline {
+    h1 {
+      font-size: 3em;
+    }
+    margin-top: 28.5em;
+    margin-left: 5em;
+    position: absolute;
+    display: block;
+  }
+  #welc {
+    margin-left: 4em;
+  }
+  .sect1 {
+    margin-top: 13em;
+    width: 28.7%;
+    margin-left: 4em;
+  }
+  .propic {
+    margin-right: 4em;
+  }
+  .sect2 {
+    margin-inline: 4em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #logo {
+    padding-left: 5em;
+  }
+
+  .sect1 {
+    margin-top: 13em;
+    width: 29.6%;
+    margin-left: 4em;
+  }
+  .tagline {
+    padding-left: 3.8em;
+  }
+  .login {
+    margin-right: 9em;
+  }
+  .modal1 {
+    margin-top: 7em;
+    width: 60%;
+    h1 {
+      padding-bottom: 1em;
+    }
+  }
+}
